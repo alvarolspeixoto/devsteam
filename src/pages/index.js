@@ -1,6 +1,8 @@
 import Head from 'next/head'
 
 import Navbar from '@/components/navbar/navbar'
+import Subtitle from '@/components/tipography/subtitle/subtitle'
+import Container from '@/components/container/container'
 
 export default function Home() {
   return (
@@ -12,9 +14,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <Navbar>
-          
-        </Navbar>
+        <Navbar />
+        <Container>
+        <div>
+          <Subtitle>Promoções</Subtitle>
+        </div>  
+        <div>
+          <Subtitle>Outros jogos</Subtitle>
+        </div>  
+        </Container>
       </div>
       
     </>
