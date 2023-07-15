@@ -5,7 +5,8 @@
 .salecontainer {
     margin-top: 20px;
     display: flex;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-between;
 }
 
@@ -14,4 +15,10 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+@media (max-width: 850px) {
+    .salecontainer {
+        justify-content: center;
+    }
 }
