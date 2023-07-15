@@ -8,3 +8,10 @@
     gap: 10px;
     justify-content: space-between;
 }
+
+.gamecontainer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
