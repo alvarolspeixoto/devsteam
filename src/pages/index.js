@@ -23,9 +23,21 @@ export default function Home() {
         <div className={styles.session}>
           <Subtitle>Promoções</Subtitle>
           <div className={styles.salecontainer}>
-            <SaleCard />
-            <SaleCard />
-            <SaleCard />
+            <SaleCard 
+              image={'league-of-legends.jpg'}
+              discount={30}
+              fullPrice={199.9}
+            />
+            <SaleCard 
+              image={'dota-2.jpg'}
+              discount={40}
+              fullPrice={299.9}
+            />
+            <SaleCard 
+              image={'valorant.jpg'}
+              discount={50}
+              fullPrice={399.9}
+            />
           </div>
         </div>  
         <div className={styles.session}>
