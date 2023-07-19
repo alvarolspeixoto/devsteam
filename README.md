@@ -1,7 +1,7 @@
 ## Sobre
 
-Esse projeto foi construído para fins didáticos no evento Semana da Evolução na Programação.
-Acesse <a href="https://devsteam-one.vercel.app/">aqui</a>.
+Esse projeto está sendo desenvolvido para fins didáticos no evento Semana da Evolução na Programação.<br>
+Acesse clicando <a href="https://devsteam-one.vercel.app/">aqui</a>.
 
 ## Tecnologias
 
