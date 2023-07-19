@@ -3,14 +3,17 @@ import Logo from '../logo/logo'
 import Input from '../forms/input/input'
 import CartButton from '../forms/cartButton/cartButton'
 
-export default function Navbar() {
+export default function Navbar({cart, onRemove}) {
     return (
         <nav className={styles.navbar}>
             <Logo />
             <div className={styles.search}>
                 <Input type='text' placeholder='Buscar' fullWidth={true}/>
             </div>
-            <CartButton></CartButton>
+            <CartButton
+                cart={cart} 
+                onRemove={onRemove}
+            />
         </nav>
     )
 }

@@ -2,7 +2,7 @@ import styles from './saleCard.module.css'
 import Image from 'next/image'
 import Button from '@/components/forms/button/button'
 
-export default function SaleCard({ image, discount, fullPrice }) {
+export default function SaleCard({ image, discount, fullPrice, onAdd }) {
 
     return (
         <div className={styles.salecard}>
@@ -16,7 +16,7 @@ export default function SaleCard({ image, discount, fullPrice }) {
                         <h4 className={styles.discountprice}>{(fullPrice * (1 - (discount/100))).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</h4>
                     </div>
                 </div>
-                <Button fullWidth={true}>Adicionar ao carrinho</Button>
+                <Button fullWidth={true} onClick={onAdd}>Adicionar ao carrinho</Button>
             </div>
         </div>
     )
